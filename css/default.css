@@ -1,0 +1,116 @@
+:root {
+  --hero-background-color: #212222;
+  --background-color: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD8/vz08vT09vT8+vzs7uxH16TeAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuFJREFUOI0Vk+3NLiEIRG1B8ClAYAsQ2AIEt4D9ePtv5Xp/mZgYJ2fOFJKEfInkVWY2aglmQFkimRTV7MblYyVqD7HXyhKsSuPX12MeDhRHLtGvRG+P+B/S0Vu4OswR9tmvwNPyhdCDbVayJGads/WiUWcjCvCnruTBNHS9gmX2VzVbk7ZvB1gb1hkWFGl+A/n+/FowcO34U/XvKqZ/fHY+6vgRfU92XrOBUbGeeDfQmjWjdrK+frc6FdGReQhfSF5JvR29O2QrfNw1huTwlgsyXLo0u+5So82sgv7tsFZR2nxB6lXiquHrfD8nfYZ9SeT0LiuvSoVrxGY16pCNRZKqvwWsn5OHypPBELzohMCaRaa0ceTHYqe7X/gfJEEtKFbJpWoNqO+aS1cuTykGPpK5Ga48m6L3NefTr013KqYBQu929iP1oQ/7UwSR+i3zqruUmT84qmhzLpxyj7pr9kg7LKvqaXxZmdpn+6o8sHqSqojy02gU3U8q9PnpidiaLks0mbMYz+q2uVXsoBQ8bfURULYxRgZVYCHMv9F4OA7qxT2NPPpvGQ/sTDH2yznKh7E2AcErfcNsaIoN1izzbJiaY63x4QjUFdBSvDCvugPpu5xDny0jzEeuUQbcP1aGT9V90uixngTRLYNEIIZ6yOF1H8tm7rj2JxiefsVy53zGVy3ag5uuPsdufYOzYxLRxngKe7nhx3VAq54pmz/DK9/Q3aDam2Yt3hNXB4HuU87jKNd/CKZn77Qdn5QkXPfqSkhk7hGOXXB+7v09KbBbqdvxGqa0AqfK/atIrL2WXdAgXAJ43Wtwe/aIoacXezeGPMlhDOHDbSfHnaXsL2QzbT82GRwZuezdwcoWzx5pnOnGMUdHuiY7lhdyWzWiHnucLZQxYStMJbtcydHaQ6vtMbe0AcDbxG+QG14AL94xry4297xpy9Cpf1OoxZ740gHDfrK+gtsy0xabwJmfgtCeii79B6aj0SJeLbd7AAAAAElFTkSuQmCC);
+  --button-color: rgb(42, 125, 219);
+  --text-color: #222121;
+  --glass-background: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  max-width: 1100px;
+}
+
+body {
+  background-image: var(--background-color);
+  font-family: Inter, sans-serif;
+  padding-block: 0;
+  /* padding-inline: 20px; */
+  margin: 0;
+  color: var(--text-color);
+  transition: background-color 0.1s ease, color 1s ease;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin-inline: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+  /* border-bottom: 1px solid gainsboro; */
+  max-width: 1500px;
+  background-color: white;
+  padding-inline: 20px;
+  box-sizing: border-box;
+}
+
+.my-bookings a {
+  text-decoration: none;
+  color: white;
+}
+
+.my-bookings {
+  background-color: var(--button-color);
+  padding-inline: 10px;
+  padding-block: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 26px;
+  margin-block: auto;
+}
+
+.my-bookings:hover,
+.search:hover {
+  background-color: rgb(30, 103, 187);
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.call img {
+  width: 20px;
+  height: 20px;
+}
+
+h1 {
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+span {
+  color: var(--button-color);
+}
+
+form {
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgb(219, 217, 217);
+}
+
+.search input {
+  color: white;
+  font-size: 16px;
+}
+
+h2 {
+  margin-block: 0;
+  padding-block: 0;
+}
+
+p {
+  margin-block: 0;
+  padding-bottom: 2px;
+}
+
+.date input {
+  color: var(--text-color);
+}
+
+select {
+  color: var(--text-color);
+}

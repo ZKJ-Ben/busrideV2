@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--inter font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <!-- css for the default style on all screens -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <!-- css for mobile screens -->
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="only screen and (max-width: 650px)"
+    />
+    <link rel="preload" href="./css/mobile.css" as="style" />
+    <!-- css for tablet screens -->
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="only screen and (min-width: 650.1px)"
+    />
+    <link rel="preload" href="./css/tablet.css" as="style" />
+
+    <title>Project</title>
+  </head>
+  <body>
+    <!-- This is the home of the logo and my bookings -->
+    <header>
+      <div class="logo">
+        <img
+          src="./assets/brt-lane-svgrepo-com.svg"
+          alt="logo"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="my-bookings"><a href="#">My bookings</a></div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- a section for a brief message -->
+        <h1>Buy <span>tickets</span> for your next trip<span>.</span></h1>
+        <!-- div to house origin, destination, and date of travel and search-->
+        <form>
+          <div>
+            <select>
+              <option>Travelling from?</option>
+              <option>Accra</option>
+              <option>Kumasi</option>
+              <option>Cape Coast</option>
+              <option>Bolgatanga</option>
+              <option>Wa</option>
+            </select>
+          </div>
+
+          <div>
+            <select>
+              <option>Travelling to?</option>
+              <option>Accra</option>
+              <option>Kumasi</option>
+              <option>Cape Coast</option>
+              <option>Bolgatanga</option>
+              <option>Wa</option>
+              <option>Akim Oda</option>
+              <option>Suhum</option>
+              <option>Koforidua</option>
+              <option>Ho</option>
+              <option>Takoradi</option>
+              <option>Denu</option>
+              <option>Swedru</option>
+              <option>Atimpoku</option>
+              <option>Aflao</option>
+              <option>Anomabo</option>
+              <option>Mankessim</option>
+              <option>Yendi</option>
+            </select>
+          </div>
+
+          <div class="date">
+            <input type="date" name="date" id="date" value="2024-11-02" />
+          </div>
+
+          <div class="search">
+            <input type="button" name="search" value="Search" />
+          </div>
+        </form>
+
+        <!-- <div class="call">
+        <a href="tel:+233558869133"><img src="./assets/telephone-receiver-svgrepo-com.svg" alt="call us" /></a>
+      </div> -->
+        <br /><br />
+
+        <!-- div to house shortcode and call -->
+        <p>For offline ticketing, dial</p>
+        <h2>*127*48#</h2>
+      </div>
+    </main>
+    <!-- footer = address, call and other products -->
+  </body>
+</html>
